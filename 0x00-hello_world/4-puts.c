@@ -1,9 +1,10 @@
 #include <stdio.h>
 
+
 /**
   * main - print "programing is like building a multilingual 
   * puzzle,followed by new line.
-  * return :always 0.
+  * return: always 0.
   */
 
 int main(void) 
