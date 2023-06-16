@@ -9,27 +9,27 @@
  */
 int main(void)
 {
-	int n;
+    int n;
 
-	srand(time(0)); /* Seed the random number generator */
+    srand(time(0)); /* Seed the random number generator */
 
-	n = rand() - RAND_MAX / 2; /* Generate a random number between -RAND_MAX/2 and RAND_MAX/2 */
+    n = rand() - (RAND_MAX / 2); /* Generate a random number between -RAND_MAX/2 and RAND_MAX/2 */
 
-	printf("%d is", n);
+    printf("%d is", n);
 
-	if (n > 0)
-	{
-		printf(" positive\n");
-	}
-	else if (n == 0)
-	{
-		printf(" zero\n");
-	}
-	else
-	{
-		printf(" negative\n");
-	}
+    if (n > 0)
+    {
+        printf(" positive\n");
+    }
+    else if (n == 0)
+    {
+        printf(" zero\n");
+    }
+    else
+    {
+        printf(" negative\n");
+    }
 
-	return (0);
+    return 0;
 }
 
