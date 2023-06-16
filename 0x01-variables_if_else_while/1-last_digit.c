@@ -13,8 +13,8 @@ int main(void)
 
 	srand(time(0)); /* Seed the random number generator */
 
-	n = rand(); /* Generate a random number */
-	lastDigit = abs(n) % 10; /* Calculate the last digit */
+	n = rand() % 100; /* Generate a random number between 0 and 99 */
+	lastDigit = n % 10; /* Calculate the last digit */
 
 	printf("Last digit of %d is %d ", n, lastDigit);
 
@@ -33,4 +33,3 @@ int main(void)
 
 	return (0);
 }
-
