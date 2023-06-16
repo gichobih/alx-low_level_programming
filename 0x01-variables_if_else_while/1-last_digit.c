@@ -14,7 +14,7 @@ int main(void)
 	srand(time(0)); /* Seed the random number generator */
 
 	n = rand(); /* Generate a random number */
-	lastDigit = n % 10; /* Extract the last digit */
+	lastDigit = abs(n) % 10; /* Calculate the last digit */
 
 	printf("Last digit of %d is %d ", n, lastDigit);
 
