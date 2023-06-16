@@ -15,13 +15,13 @@ int main(void)
 
     n = rand(); /* Generate a random number */
 
-    printf("Last digit of %d is %d ", n, n % 10);
+    printf("Last digit of %d is %d ", n, abs(n % 10));
 
-    if (n % 10 > 5)
+    if (abs(n % 10) > 5)
     {
         printf("and is greater than 5\n");
     }
-    else if (n % 10 == 0)
+    else if (abs(n % 10) == 0)
     {
         printf("and is 0\n");
     }
