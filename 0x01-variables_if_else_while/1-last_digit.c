@@ -9,22 +9,20 @@
  */
 int main(void)
 {
-	int n;
+	int n, lastDigit;
 
 	srand(time(0)); /* Seed the random number generator */
 
-	n = rand() % 10; /* Generate a random number from 0 to 9 */
+	n = rand(); /* Generate a random number */
+	lastDigit = n % 10; /* Extract the last digit */
 
-	printf("Last digit of ");
+	printf("Last digit of %d is %d ", n, lastDigit);
 
-	/* Print the original number (for reference) */
-	printf("%d is %d ", n, n);
-
-	if (n > 5)
+	if (lastDigit > 5)
 	{
 		printf("and is greater than 5\n");
 	}
-	else if (n == 0)
+	else if (lastDigit == 0)
 	{
 		printf("and is 0\n");
 	}
