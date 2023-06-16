@@ -9,27 +9,30 @@
  */
 int main(void)
 {
-    int n;
+	int n;
 
-    srand(time(0)); /* Seed the random number generator */
+	srand(time(0)); /* Seed the random number generator */
 
-    n = rand(); /* Generate a random number */
+	n = rand() % 10; /* Generate a random number from 0 to 9 */
 
-    printf("Last digit of %d is %d ", n, abs(n % 10));
+	printf("Last digit of ");
 
-    if (abs(n % 10) > 5)
-    {
-        printf("and is greater than 5\n");
-    }
-    else if (abs(n % 10) == 0)
-    {
-        printf("and is 0\n");
-    }
-    else
-    {
-        printf("and is less than 6 and not 0\n");
-    }
+	/* Print the original number (for reference) */
+	printf("%d is %d ", n, n);
 
-    return 0;
+	if (n > 5)
+	{
+		printf("and is greater than 5\n");
+	}
+	else if (n == 0)
+	{
+		printf("and is 0\n");
+	}
+	else
+	{
+		printf("and is less than 6 and not 0\n");
+	}
+
+	return (0);
 }
 
