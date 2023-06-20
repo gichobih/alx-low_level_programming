@@ -2,30 +2,23 @@
 /**
  * print ten times the alphabets in lower case followed by new line
  */
-void print_alphbates(void)
+void print_alphbates_10_times(void)
 {
-	char letter = 'a', x;
+	int i,j;
 
-	while(x >= 10)
-        {
-                _putchar("\n");
-
-                x++;
-        }
-
-	while(letter <= 'z')
+	for(j>0, j<= 10, j++)
 	{
-		_putchar(letters);
+		char letter = 'a'
 
-		letters++;
-	}	
-        
-	_putchar('\n');
-	while(x >= 10)
-	{
-		_putchar("\n");
+		while (letter<= 'z')
+		{
+			_putchar(letter);
+			letter++;
+		}
 
-		x++;
+		_putchar('\n');
 	}
 
 }
+
+

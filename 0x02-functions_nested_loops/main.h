@@ -1,9 +1,9 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
 
-int _putchar(char c);
-void print_alphabet(void);
+int main(void)
+{
+	print_alphabet_x10();
 
-#endif /* MAIN_H */
-
+	return (0);
+}
 
