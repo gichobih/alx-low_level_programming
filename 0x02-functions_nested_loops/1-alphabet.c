@@ -1,22 +1,20 @@
 #include "main.h"
+
 /**
- *  I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game.
- *
- *  always return (0) 0n success
+ * print_alphabet - prints lowercase alphabet
+ * Return: 0
  */
-int main(void)
+
+void print_alphabet(void)
 {
 	char alpha;
 
-	alpha= 'a';
+	alpha = 'a';
 
 	while (alpha <= 'z')
 	{
 		_putchar(alpha);
-                alpha++;
-        }
-
-	_putchar ('\n');
-}
-
-	
+		alpha++;
+	}
+	_putchar('\n');
+}	
