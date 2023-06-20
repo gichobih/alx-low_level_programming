@@ -1,9 +1,7 @@
-#include "main.h"
+#ifndef MAIN_H
+#define MAIN_H
 
-int main(void)
-{
-	print_alphabet_x10();
+/* Function prototypes */
 
-	return (0);
-}
+#endif /* MAIN_H */
 
