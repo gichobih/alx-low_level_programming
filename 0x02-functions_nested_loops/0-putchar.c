@@ -1,19 +1,21 @@
 #include <unistd.h>
+
 /**
- * print putchar
+ *main - print _putchar
  *
- * return on success 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char *str = "_putchar\n";
-
-	while (*str)
-	{
-	write(1, str, 1);
-	str++;
-        }
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
 	return (0);
 }
-
