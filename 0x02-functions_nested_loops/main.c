@@ -1,15 +1,26 @@
 #include "main.h"
 
-int _putchar(char c);
-
-int main(void)
+/**
+ * test_islower - Test the _islower function
+ *
+ * @n: Number to pass to _islower function
+ */
+void test_islower(int n)
 {
-	char ch = 'a';
-	char result = (_islower(ch) ? '1' : '0');
+	int r;
 
-	_putchar(result);
+	r = _islower(n);
+	_putchar(r + '0');
 	_putchar('\n');
-
-	return 0;
 }
 
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	test_islower('H');
+	return (0);
+}
