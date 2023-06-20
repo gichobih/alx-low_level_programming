@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-int _islower(int c);
+int test_islower(int c);
 
 int main(void)
 {
     char ch = 'a';
-    if (_islower(ch))
+    if (test_islower(ch))
         printf("Character is lowercase.\n");
     else
         printf("Character is not lowercase.\n");
