@@ -1,8 +1,15 @@
 #include "main.h"
 
+int _putchar(char c);
+
 int main(void)
 {
-    print_alphabet_x10();
-    return 0;
+	char ch = 'a';
+	char result = (_islower(ch) ? '1' : '0');
+
+	_putchar(result);
+	_putchar('\n');
+
+	return 0;
 }
 
