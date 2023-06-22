@@ -39,4 +39,8 @@ void print_square(int size);
  * @size: The size of the triangle*/
 void print_triangle(int size);
 
+/* print_number - Prints an integer
+ * @n: The integer to be printed*/
+void print_number(int n);
+
 #endif /* MAIN.H */
