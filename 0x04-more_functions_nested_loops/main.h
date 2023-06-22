@@ -13,4 +13,7 @@ int _isdigit(int c);
  * @b:the second integer*/
 int mul(int a, int b);
 
+/*prints number from (0-9)followed by new line*/
+void print_numbers(void);
+
 #endif /* MAIN.H */
