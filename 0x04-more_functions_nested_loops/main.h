@@ -41,6 +41,7 @@ void print_triangle(int size);
 
 /* print_number - Prints an integer
  * @n: The integer to be printed*/
+int _putchar(char c);
 void print_number(int n);
 
 #endif /* MAIN.H */
