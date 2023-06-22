@@ -1,7 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
-/**check if the character is uppercase
+/*_isupper: check if the character is uppercase
  * @c is the character to check*/
 int _isupper(int c);
+
+/*_isdigit: checks if the character is a digit (0-9)
+ * @c is the character to be checked*/
+int _isdigit(int c);
 
 #endif /* MAIN.H */
