@@ -31,4 +31,8 @@ void print_line(int n);
  * @n: The number of times the character '\' should be printed*/
 void print_diagonal(int n);
 
+/* print_square - Prints a square followed by a new line
+ * @size: The size of the square*/
+void print_square(int size);
+
 #endif /* MAIN.H */
