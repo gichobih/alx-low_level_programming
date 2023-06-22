@@ -35,4 +35,8 @@ void print_diagonal(int n);
  * @size: The size of the square*/
 void print_square(int size);
 
+/* print_triangle - Prints a triangle followed by a new line
+ * @size: The size of the triangle*/
+void print_triangle(int size);
+
 #endif /* MAIN.H */
