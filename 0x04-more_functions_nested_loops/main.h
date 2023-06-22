@@ -23,4 +23,8 @@ void print_most_numbers(void);
 /*more_numbers: print 10 times the number from 0-14 followed by new line*/
 void more_numbers(void);
 
+/*print_line: draws a straight line in the terminal
+ * @n: The number of times the character '_' should be printed*/
+void print_line(int n);
+
 #endif /* MAIN.H */
