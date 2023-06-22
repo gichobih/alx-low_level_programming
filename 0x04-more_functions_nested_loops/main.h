@@ -27,4 +27,8 @@ void more_numbers(void);
  * @n: The number of times the character '_' should be printed*/
 void print_line(int n);
 
+/*print_diagonal - Draws a diagonal line in the terminal
+ * @n: The number of times the character '\' should be printed*/
+void print_diagonal(int n);
+
 #endif /* MAIN.H */
