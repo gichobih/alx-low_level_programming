@@ -8,4 +8,9 @@ int _isupper(int c);
  * @c is the character to be checked*/
 int _isdigit(int c);
 
+/*mul: multiplies two intergers
+ * @a:the first integer
+ * @b:the second integer*/
+int mul(int a, int b);
+
 #endif /* MAIN.H */
