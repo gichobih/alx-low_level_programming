@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * main - determing postive_or_negative
+ *
+ * Return: Always 0
+ */
 int main(void)
 {
     int i;
