@@ -15,5 +15,8 @@ int mul(int a, int b);
 
 /*prints number from (0-9)followed by new line*/
 void print_numbers(void);
+/*print most: prints numbers from 0 to 9 followed by new line except 2 and 4
+ */
+void print_most_numbers(void);
 
 #endif /* MAIN.H */
