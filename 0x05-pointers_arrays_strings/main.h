@@ -9,5 +9,8 @@ void reset_to_98(int *n);
  * @a;integer a and @b integer b */
 void swap_int(int *a, int *b);
 
+/*int_strlen; Returns the lenghth of a string*/
+int _strlen(char *s);
+
 #endif /* MAIN_H */
 
