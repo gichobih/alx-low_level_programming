@@ -25,5 +25,9 @@ void rev_string(char *s);
  * character followed by new line*/
 void puts2(char *str);
 
+/*void puts_half(char *str); prints half of the string followed by new line
+ */
+void puts_half(char *str);
+
 #endif /* MAIN_H */
 
