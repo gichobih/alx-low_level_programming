@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include <time.h>
+#include <string.h>
 
 /**
- * generate_password - Generates the password "Tada! Congrats".
+ * generate_password - Generates a specific password.
  *
  * Return: The generated password.
  */
@@ -25,9 +25,9 @@ char *generate_password(void)
 
 int main(void)
 {
-    srand(time(NULL));
+    char *password;
 
-    char *password = generate_password();
+    password = generate_password();
 
     printf("Generated Password: %s\n", password);
 
