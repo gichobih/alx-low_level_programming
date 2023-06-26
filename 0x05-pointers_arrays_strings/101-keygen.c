@@ -23,7 +23,7 @@ char *generate_password(void)
 
     for (i = 0; i < 10; i++)
     {
-        password[i] = rand() % 94 + 33;  // ASCII printable characters
+        password[i] = rand() % 94 + 33;  /* ASCII printable characters */
     }
     password[10] = '\0';
 
