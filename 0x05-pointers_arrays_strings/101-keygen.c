@@ -33,15 +33,22 @@ char *generate_password(void)
     return password;
 }
 
+/**
+ * main - Entry point of the program.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
+    int i;
     char *password;
 
-    password = generate_password();
-
-    printf("%s\n", password);
-
-    free(password);
+    for (i = 0; i < 10; i++)
+    {
+        password = generate_password();
+        printf("%s\n", password);
+        free(password);
+    }
 
     return 0;
 }
