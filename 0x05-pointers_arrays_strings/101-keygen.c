@@ -4,13 +4,15 @@
 #include <string.h>
 
 /**
- * generate_password - Generates a specific password.
+ * generate_password - Generates a random valid password.
  *
  * Return: The generated password.
  */
 char *generate_password(void)
 {
-    char *password = malloc(16 * sizeof(char));
+    char *password = malloc(17 * sizeof(char));
+    const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    int i;
 
     if (password == NULL)
     {
@@ -18,7 +20,15 @@ char *generate_password(void)
         exit(EXIT_FAILURE);
     }
 
-    strcpy(password, "Tada! Congrats");
+    srand(time(NULL));
+
+    for (i = 0; i < 16; i++)
+    {
+        int index = rand() % (sizeof(charset) - 1);
+        password[i] = charset[index];
+    }
+
+    password[16] = '\0';
 
     return password;
 }
@@ -29,7 +39,7 @@ int main(void)
 
     password = generate_password();
 
-    printf("Generated Password: %s\n", password);
+    printf("%s\n", password);
 
     free(password);
 
