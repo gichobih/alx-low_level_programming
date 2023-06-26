@@ -1,15 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include <string.h>
 
 /**
- * generate_password - Generates a specific password.
+ * generate_password - Generates a random password.
  *
  * Return: The generated password.
  */
 char *generate_password(void)
 {
-    char *password = malloc(16 * sizeof(char));
+    char *password = malloc(11 * sizeof(char));
+    int i;
 
     if (password == NULL)
     {
@@ -17,11 +19,22 @@ char *generate_password(void)
         exit(EXIT_FAILURE);
     }
 
-    strcpy(password, "Tada! Congrats");
+    srand(time(NULL));
+
+    for (i = 0; i < 10; i++)
+    {
+        password[i] = rand() % 94 + 33;  // ASCII printable characters
+    }
+    password[10] = '\0';
 
     return password;
 }
 
+/**
+ * main - Entry point of the program.
+ *
+ * Return: 0 on success.
+ */
 int main(void)
 {
     char *generated_password = generate_password();
