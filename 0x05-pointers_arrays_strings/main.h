@@ -5,5 +5,9 @@
  * @n: Pointer to an integer.*/
 void reset_to_98(int *n);
 
+/*swap_int - to swap integers 
+ * @a;integer a and @b integer b */
+void swap_int(int *a, int *b);
+
 #endif /* MAIN_H */
 
