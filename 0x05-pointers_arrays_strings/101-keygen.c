@@ -12,6 +12,7 @@ char *generate_password(int length)
 {
     static const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     char *password = malloc((length + 1) * sizeof(char));
+    int i;
 
     if (password == NULL)
     {
@@ -19,7 +20,7 @@ char *generate_password(int length)
         exit(EXIT_FAILURE);
     }
 
-    for (int i = 0; i < length; i++)
+    for (i = 0; i < length; i++)
     {
         int index = rand() % (sizeof(charset) - 1);
         password[i] = charset[index];
