@@ -28,8 +28,12 @@ void puts2(char *str);
 /*void puts_half(char *str); prints half of the string followed by new line
  */
 void puts_half(char *str);
+
 /*void print_array(int *, int n); prints n element of an array of integers followed by new line*/
 void print_array(int *a, int n);
 
+/*char *_strcpy(char *dest, char *src); copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest.
+Return value: the pointer to dest*/
+char *_strcpy(char *dest, char *src);
 #endif /* MAIN_H */
 
