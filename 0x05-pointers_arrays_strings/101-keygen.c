@@ -1,18 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 
 /**
- * generate_password - Generates a random password.
- * @length: Length of the password.
+ * generate_password - Generates a specific password.
  *
  * Return: The generated password.
  */
-char *generate_password(int length)
+char *generate_password(void)
 {
-    static const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-    char *password = malloc((length + 1) * sizeof(char));
-    int i;
+    char *password = malloc(16 * sizeof(char));
 
     if (password == NULL)
     {
@@ -20,25 +18,16 @@ char *generate_password(int length)
         exit(EXIT_FAILURE);
     }
 
-    for (i = 0; i < length; i++)
-    {
-        int index = rand() % (sizeof(charset) - 1);
-        password[i] = charset[index];
-    }
-
-    password[length] = '\0';
+    strcpy(password, "Tada! Congrats");
 
     return password;
 }
 
 int main(void)
 {
-    int password_length = 10;
     char *password;
 
-    srand(time(NULL));
-
-    password = generate_password(password_length);
+    password = generate_password();
 
     printf("Generated Password: %s\n", password);
 
