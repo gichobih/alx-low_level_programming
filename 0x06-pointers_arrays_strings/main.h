@@ -33,4 +33,8 @@ void reverse_array(int *a, int n);
  * @s: string to manipulate*/
 char *string_toupper(char *);
 
+/*cap_string - capitalize first letter of each word
+ * @s: string to manipulate*/
+char *cap_string(char *);
+
 #endif /* MAIN_H*/
