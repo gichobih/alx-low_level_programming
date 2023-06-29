@@ -45,4 +45,8 @@ char *leet(char *);
  * @s: string to encode*/
 char *rot13(char *);
 
+/*print_number - print an integer, without using long, arrays, or pointers
+ * @n: number to be printed*/
+void print_number(int n);
+
 #endif /* MAIN_H*/
