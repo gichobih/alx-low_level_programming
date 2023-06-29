@@ -13,4 +13,10 @@ char *_strcat(char *dest, char *src);
  * @n: append n number of bytes(chars)*/
 char *_strncat(char *dest, char *src, int n);
 
+/*_strncpy - copies n bytes of a source into buffer of a destination string,
+ * @dest: copy source to this buffer
+ * @src: this is the source to copy
+ * @n: n bytes to be copied*/
+char *_strncpy(char *dest, char *src, int n);
+
 #endif /* MAIN_H*/
