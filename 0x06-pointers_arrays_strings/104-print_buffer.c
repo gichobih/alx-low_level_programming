@@ -1,18 +1,12 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_buffer - Prints the content of a buffer
- * @b: The buffer to print
- * @size: The number of bytes to print from the buffer
+ * @b: Pointer to the buffer
+ * @size: Size of the buffer
  *
- * Description: This function prints the content of the buffer, with 10 bytes
- * per line, in hexadecimal and ASCII representation.
- * Each line starts with the position of the first byte in hexadecimal.
- * Each line shows the hexadecimal content (2 chars) of the buffer, 2 bytes at a time,
- * separated by a space. If a byte is not printable, a dot (.) is printed instead.
- * Each line ends with a newline character (\n).
- * If size is 0 or less, the output is a newline character (\n) only.
+ * Return: void
  */
 void print_buffer(char *b, int size)
 {
@@ -26,12 +20,14 @@ void print_buffer(char *b, int size)
 
 	for (i = 0; i < size; i += 10)
 	{
+		/* Print hexadecimal address */
 		printf("%08x: ", i);
 
-		for (j = 0; j < 10; j++)
+		/* Print hexadecimal content */
+		for (j = i; j < i + 10; j++)
 		{
-			if (i + j < size)
-				printf("%02x", (unsigned char)b[i + j]);
+			if (j < size)
+				printf("%02x", b[j]);
 			else
 				printf("  ");
 
@@ -39,21 +35,16 @@ void print_buffer(char *b, int size)
 				printf(" ");
 		}
 
-		printf(" ");
-
-		for (j = 0; j < 10; j++)
+		/* Print buffer content */
+		for (j = i; j < i + 10; j++)
 		{
-			if (i + j < size)
-			{
-				if (b[i + j] >= 32 && b[i + j] <= 126)
-					printf("%c", b[i + j]);
-				else
-					printf(".");
-			}
+			if (j >= size)
+				break;
+
+			if (b[j] >= 32 && b[j] <= 126)
+				printf("%c", b[j]);
 			else
-			{
-				printf(" ");
-			}
+				printf(".");
 		}
 
 		printf("\n");
