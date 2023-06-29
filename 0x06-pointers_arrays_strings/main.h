@@ -29,4 +29,8 @@ int _strcmp(char *s1, char *s2);
  * @n: number of elements in array*/
 void reverse_array(int *a, int n);
 
+/*string_toupper - capitalize all letters in string
+ * @s: string to manipulate*/
+char *string_toupper(char *);
+
 #endif /* MAIN_H*/
