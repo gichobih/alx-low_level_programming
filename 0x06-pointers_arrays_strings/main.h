@@ -41,4 +41,8 @@ char *cap_string(char *);
  * @s: string to manipulate*/
 char *leet(char *);
 
+/*rot13 - encode string using rot13
+ * @s: string to encode*/
+char *rot13(char *);
+
 #endif /* MAIN_H*/
