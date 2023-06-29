@@ -19,4 +19,9 @@ char *_strncat(char *dest, char *src, int n);
  * @n: n bytes to be copied*/
 char *_strncpy(char *dest, char *src, int n);
 
+/*_strcmp - compare two strings
+ * @s1: one string
+ * @s2: one string*/
+int _strcmp(char *s1, char *s2);
+
 #endif /* MAIN_H*/
