@@ -49,4 +49,8 @@ char *rot13(char *);
  * @n: number to be printed*/
 void print_number(int n);
 
+/*infinite_add - Adds two numbers. @n1: The first number.@n2: The second number.
+ * @r: The buffer to store the result. @size_r: The size of the buffer.*/
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
+
 #endif /* MAIN_H*/
