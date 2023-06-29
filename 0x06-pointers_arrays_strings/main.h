@@ -53,4 +53,9 @@ void print_number(int n);
  * @r: The buffer to store the result. @size_r: The size of the buffer.*/
 char *infinite_add(char *n1, char *n2, char *r, int size_r);
 
+/*print_buffer - Prints the content of a buffer
+ * @b: The buffer to print
+ * @size: The number of bytes to print from the buffer*/
+void print_buffer(char *b, int size);
+
 #endif /* MAIN_H*/
