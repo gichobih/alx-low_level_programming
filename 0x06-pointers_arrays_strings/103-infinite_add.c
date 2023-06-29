@@ -32,6 +32,9 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 
 	while (i >= 0 || j >= 0)
 	{
+		if (k < 0)
+			return (0);
+
 		sum = carry;
 		if (i >= 0)
 			sum += n1[i] - '0';
