@@ -33,5 +33,10 @@ char *_strpbrk(char *s, char *accept);
  * @needle: target substring to search for */
 char *_strstr(char *haystack, char *needle);
 
+/* print_chessboard - print chessboard given set 2D array
+ * @a: 2D array */
+void print_chessboard(char (*a)[8]);
+
+
 
 #endif /*MAIN_H*/
