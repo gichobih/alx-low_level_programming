@@ -18,5 +18,10 @@ char *_memcpy(char *dest, char *src, unsigned int n);
  * @c; target char */
 char *_strchr(char *s, char c);
 
+/*_strspn- return the length of the string that matches the values constanly
+ * @s; string to search
+ * @accept; target matches */
+unsigned int _strspn(char *s, char *accept);
+
 
 #endif /*MAIN_H*/
