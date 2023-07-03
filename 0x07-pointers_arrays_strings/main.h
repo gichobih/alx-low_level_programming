@@ -23,5 +23,10 @@ char *_strchr(char *s, char c);
  * @accept; target matches */
 unsigned int _strspn(char *s, char *accept);
 
+/*_strpbrk-return pointer to the byte in s that matches the byte in accept
+ * @s-string to search
+ * @accept-target matches */
+char *_strpbrk(char *s, char *accept);
+
 
 #endif /*MAIN_H*/
