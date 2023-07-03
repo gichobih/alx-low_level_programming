@@ -28,5 +28,10 @@ unsigned int _strspn(char *s, char *accept);
  * @accept-target matches */
 char *_strpbrk(char *s, char *accept);
 
+/*_strstr-finds the first occurence of substring
+ * @haystack: string to search
+ * @needle: target substring to search for */
+char *_strstr(char *haystack, char *needle);
+
 
 #endif /*MAIN_H*/
