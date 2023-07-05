@@ -8,6 +8,9 @@ void _puts_recursion(char *s);
  * @s; is the string to print*/
 void _print_rev_recursion(char *s);
 
+/*_strlen_recursion - prints the length of the string .
+ * @s- is the string*/
+int _strlen_recursion(char *s);
 
 
 
