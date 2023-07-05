@@ -11,11 +11,10 @@ void _puts_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-		putchar('\n'); /* Print a new line when the end of the string is reached */
+		putchar('\n');
 		return;
 	}
-
-	putchar(*s); /* Print the current character */
-	_puts_recursion(s + 1); /* Recursively call the function with the next character */
+        putchar(*s);
+	_puts_recursion(s + 1); 
 }
 
