@@ -33,6 +33,10 @@ int is_prime_number(int n);
  * @head: index starting from left of string
  * @tail: index starting from right of string, moving backwards */
 int is_palindrome(char *s);
+/*substring_match - check if a substring after wildcard matches s1
+ * @s1: one string
+ * @s2: one string */
+int wildcmp(char *s1, char *s2);
 
 
 
