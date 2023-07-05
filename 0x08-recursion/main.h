@@ -12,6 +12,10 @@ void _print_rev_recursion(char *s);
  * @s- is the string*/
 int _strlen_recursion(char *s);
 
+/*int_factorial- Return the factorial of a given number.
+ * @n ; the number*/
+int factorial(int n);
+
 
 
 
