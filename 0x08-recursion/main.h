@@ -21,6 +21,9 @@ int factorial(int n);
  * @y; power to raise to. */
 int _pow_recursion(int x, int y);
 
+/*_sqrt_recursion- Return the natural squre root of a number.
+ * @n ; Number */
+int _sqrt_recursion(int n);
 
 
 
