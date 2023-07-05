@@ -16,6 +16,11 @@ int _strlen_recursion(char *s);
  * @n ; the number*/
 int factorial(int n);
 
+/*_pow_recursion- Returns the value the value of x raised to power of y.
+ * @x; the number
+ * @y; power to raise to. */
+int _pow_recursion(int x, int y);
+
 
 
 
