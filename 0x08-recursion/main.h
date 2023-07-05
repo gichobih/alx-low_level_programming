@@ -29,6 +29,11 @@ int _sqrt_recursion(int n);
  * @n; number */
 int is_prime_number(int n);
 
+/*compare - compare head and tail indices for match
+ * @head: index starting from left of string
+ * @tail: index starting from right of string, moving backwards */
+int is_palindrome(char *s);
+
 
 
 #endif /*MAIN_H*/
