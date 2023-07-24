@@ -19,13 +19,13 @@ int (*get_func(const char *specifier))(va_list)
 	switch (*specifier)
 	{
 		case 'c':
-			return &print_char;
+			return (&print_char);
 		case 's':
-			return &print_string;
+			return (&print_string);
 		case '%':
-			return &print_percent;
+			return (&print_percent);
 		default:
-			return NULL;
+			return (NULL);
 	}
 }
 
@@ -41,9 +41,10 @@ int _printf(const char *format, ...)
 	int (*m)(va_list);
 	va_list args;
 	int count;
+
 	va_start(args, format);
 
-        count = 0; /* Number of characters printed */
+	count = 0; /* Number of characters printed */
 
 	while (*format != '\0')
 	{
@@ -53,7 +54,7 @@ int _printf(const char *format, ...)
 
 			/* Check if it's a valid specifier */
 			if (*format == '\0')
-				return -1; /* Invalid format string */
+				return (-1); /* Invalid format string */
 
 			m = get_func(format);
 			if (m != NULL)
@@ -70,7 +71,7 @@ int _printf(const char *format, ...)
 	}
 
 	va_end(args);
-	return count;
+	return (count);
 }
 
 /**
@@ -82,8 +83,9 @@ int _printf(const char *format, ...)
 int print_char(va_list args)
 {
 	char c = (char)va_arg(args, int);
+
 	putchar(c);
-	return 1;
+	return (1);
 }
 
 /**
@@ -104,7 +106,7 @@ int print_string(va_list args)
 		count++;
 	}
 
-	return count;
+	return (count);
 }
 
 /**
@@ -117,6 +119,6 @@ int print_percent(va_list args)
 {
 	(void)args; /* Unused parameter */
 	putchar('%');
-	return 1;
+	return (1);
 }
 
