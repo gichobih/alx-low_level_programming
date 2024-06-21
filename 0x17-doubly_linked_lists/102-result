@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <string.h>
+
+// Function to check if a number is a palindrome
+int is_palindrome(int n) {
+    char str[12];
+    sprintf(str, "%d", n);
+    int len = strlen(str);
+    for (int i = 0; i < len / 2; i++) {
+        if (str[i] != str[len - 1 - i]) {
+            return 0;
+        }
+    }
+    return 1;
+}
+
+// Function to find the largest palindrome made from the product of two 3-digit numbers
+int find_largest_palindrome() {
+    int largest_palindrome = 0;
+    for (int i = 999; i >= 100; i--) {
+        for (int j = 999; j >= 100; j--) {
+            int product = i * j;
+            if (is_palindrome(product) && product > largest_palindrome) {
+                largest_palindrome = product;
+            }
+        }
+    }
+    return largest_palindrome;
+}
+
+int main() {
+    int largest_palindrome = find_largest_palindrome();
+
+    // Write the result to the file "102-result"
+    FILE *file = fopen("102-result", "w");
+    if (file == NULL) {
+        perror("Error opening file");
+        return 1;
+    }
+    fprintf(file, "%d", largest_palindrome);
+    fclose(file);
+
+    return 0;
+}
+
